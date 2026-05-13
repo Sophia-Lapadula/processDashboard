@@ -14,7 +14,7 @@ export default async function ConectoresPage() {
     <div className="space-y-6">
       <div className="flex items-end justify-between">
         <div>
-          <h1 className="text-2xl font-semibold">Conectores</h1>
+          <h1 className="serif text-4xl">Conectores</h1>
           <p className="text-sm text-muted-foreground mt-1">
             Integrações usadas pelos processos. MCP servers de clientes ou APIs HTTP.
           </p>

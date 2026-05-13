@@ -56,7 +56,7 @@ export default async function SkillDetailPage({
         </Link>
         <div className="flex items-start justify-between mt-2">
           <div>
-            <h1 className="text-2xl font-semibold">{skill.name}</h1>
+            <h1 className="serif text-4xl">{skill.name}</h1>
             <p className="text-xs text-muted-foreground mt-1 font-mono">{skill.slug}</p>
             {skill.description && (
               <p className="text-sm text-muted-foreground mt-2">{skill.description}</p>

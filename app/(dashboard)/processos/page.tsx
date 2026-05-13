@@ -16,7 +16,7 @@ export default async function ProcessosPage() {
     <div className="space-y-6">
       <div className="flex items-end justify-between">
         <div>
-          <h1 className="text-2xl font-semibold">Processos</h1>
+          <h1 className="serif text-4xl">Processos</h1>
           <p className="text-sm text-muted-foreground mt-1">
             Cada processo combina uma skill + conectores + prompt + trigger.
           </p>
