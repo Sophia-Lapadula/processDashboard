@@ -29,9 +29,9 @@ export default function LoginForm() {
 
   if (status === "sent") {
     return (
-      <div className="card text-center">
+      <div className="card border-primary/40 bg-primary/5">
         <p className="text-sm">
-          Enviamos um link de acesso para <strong>{email}</strong>.
+          Enviamos um link de acesso para <strong className="text-primary">{email}</strong>.
         </p>
         <p className="text-xs text-muted-foreground mt-2">
           Verifique sua caixa de entrada e clique no link para entrar.
@@ -41,7 +41,7 @@ export default function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="card space-y-3">
+    <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label className="label" htmlFor="email">
           Email
@@ -60,7 +60,7 @@ export default function LoginForm() {
       {error && <p className="text-xs text-danger">{error}</p>}
       <button
         type="submit"
-        className="btn-primary w-full"
+        className="btn-primary w-full py-2.5"
         disabled={status === "loading"}
       >
         {status === "loading" ? "Enviando..." : "Receber link de acesso"}

@@ -14,7 +14,7 @@ export default async function SkillsListPage() {
     <div className="space-y-6">
       <div className="flex items-end justify-between">
         <div>
-          <h1 className="text-2xl font-semibold">Skills</h1>
+          <h1 className="serif text-4xl">Skills</h1>
           <p className="text-sm text-muted-foreground mt-1">
             Lógicas reutilizáveis. Cada skill tem histórico de versões.
           </p>
