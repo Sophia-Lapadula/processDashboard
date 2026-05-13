@@ -35,7 +35,7 @@ export default function LoginPage() {
           <div>
             <h2 className="text-2xl font-semibold tracking-tight">Acesse sua conta</h2>
             <p className="text-sm text-muted-foreground mt-1.5">
-              Entre com seu email para receber um link de acesso.
+              Entre com seu email e senha.
             </p>
           </div>
           <LoginForm />

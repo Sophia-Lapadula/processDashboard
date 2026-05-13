@@ -43,10 +43,14 @@ A migração:
 
 ### 3. Auth do Supabase
 
-Em **Authentication → Settings**:
-- Email OTP habilitado (login via magic link)
-- Site URL: `http://localhost:3000` (dev) ou seu domínio
-- Redirect URLs: adicione `http://localhost:3000/auth/callback`
+Em **Authentication → Providers**:
+- **Email** habilitado (default).
+
+Em **Authentication → Sign In / Up**:
+- **Confirm email**: **DESLIGAR** (signup direto, sem precisar confirmar por email).
+
+Em **Authentication → URL Configuration**:
+- Site URL: `http://localhost:3000` (dev) ou seu domínio.
 
 ### 4. Rodar localmente
 
@@ -55,7 +59,7 @@ pnpm install
 pnpm dev
 ```
 
-Acesse `http://localhost:3000`, faça login com seu email, e crie sua primeira skill.
+Acesse `http://localhost:3000/signup`, crie sua conta com email e senha (mínimo 8 caracteres), e em seguida crie sua primeira skill.
 
 ## Fluxo end-to-end (BAT cadastral Takoda)
 
