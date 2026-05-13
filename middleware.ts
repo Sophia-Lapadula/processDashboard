@@ -57,6 +57,7 @@ export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const isAuthRoute =
     pathname === "/login" ||
+    pathname === "/signup" ||
     pathname.startsWith("/auth/") ||
     pathname.startsWith("/api/triggers/") ||
     pathname.startsWith("/api/cron/") ||
@@ -69,7 +70,7 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(url);
   }
 
-  if (user && pathname === "/login") {
+  if (user && (pathname === "/login" || pathname === "/signup")) {
     const url = request.nextUrl.clone();
     url.pathname = "/";
     return NextResponse.redirect(url);
