@@ -86,7 +86,7 @@ export default async function ProcessoDetailPage({
         </Link>
         <div className="flex items-start justify-between mt-2">
           <div>
-            <h1 className="text-2xl font-semibold">{processo.name}</h1>
+            <h1 className="serif text-4xl">{processo.name}</h1>
             <p className="text-xs text-muted-foreground mt-1 font-mono">{processo.slug}</p>
           </div>
           <RunNowButton processoId={id} status={processo.status} />

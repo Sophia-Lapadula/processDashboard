@@ -90,7 +90,7 @@ export default async function ConectorDetailPage({
         </Link>
         <div className="flex items-start justify-between mt-2">
           <div>
-            <h1 className="text-2xl font-semibold">{conector.name}</h1>
+            <h1 className="serif text-4xl">{conector.name}</h1>
             <p className="text-xs text-muted-foreground mt-1 font-mono">
               {conector.slug} <span className="ml-2 uppercase badge-info">{conector.type}</span>
             </p>

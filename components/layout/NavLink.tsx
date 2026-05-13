@@ -17,12 +17,15 @@ export default function NavLink({
   return (
     <Link
       href={href}
-      className={`block rounded-md px-3 py-1.5 transition-colors ${
+      className={`block rounded-md px-3 py-1.5 transition-colors relative ${
         active
-          ? "bg-primary text-primary-foreground"
-          : "text-foreground hover:bg-accent"
+          ? "text-foreground bg-accent"
+          : "text-muted-foreground hover:text-foreground hover:bg-muted/60"
       }`}
     >
+      {active && (
+        <span className="absolute left-0 top-1/2 -translate-y-1/2 h-4 w-0.5 rounded-r bg-primary" />
+      )}
       {children}
     </Link>
   );

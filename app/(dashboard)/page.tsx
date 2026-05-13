@@ -20,8 +20,8 @@ export default async function OverviewPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-2xl font-semibold">Visão geral</h1>
-        <p className="text-sm text-muted-foreground mt-1">
+        <h1 className="serif text-4xl">Visão geral</h1>
+        <p className="text-sm text-muted-foreground mt-2">
           Plataforma de orquestração de processos da Axenya.
         </p>
       </div>

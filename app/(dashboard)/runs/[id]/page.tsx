@@ -39,7 +39,7 @@ export default async function RunDetailPage({
         <div className="flex items-start justify-between mt-2">
           <div>
             <div className="flex items-center gap-3">
-              <h1 className="text-2xl font-semibold">{processo?.name ?? "—"}</h1>
+              <h1 className="serif text-4xl">{processo?.name ?? "—"}</h1>
               <RunStatusBadge status={run.status} />
             </div>
             <p className="text-xs text-muted-foreground mt-1">
